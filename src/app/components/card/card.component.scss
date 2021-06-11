@@ -88,14 +88,10 @@
 /***** Lily *****/
 /*---------------*/
 
-@keyframes border-pulse {
-    50% {
-        border-color: rgba(0, 0, 0, 0);
-    }
-}	
+
 figure {
-	border: 2px solid #f7a1a5;
-	animation: border-pulse 4s infinite;
+	border: 1px solid #f7a1a5;
+
 }
 figure.effect-lily img {
 	max-width: none;
