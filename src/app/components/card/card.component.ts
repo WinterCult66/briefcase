@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-card',
@@ -15,7 +16,7 @@ export class CardComponent implements OnInit {
   changeTheUrl = true;
   constructor() {
 
-    if (this.changeTheUrl == true) {
+    if (environment.production == true) {
       this.asset1 = '../briefcase' + this.asset1;
       this.asset2 = '../briefcase' + this.asset2;
       this.asset3 = '../briefcase' + this.asset3;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { 
 
-    if (this.changeTheUrl == true) {
+    if (environment.production == true) {
       this.logoAsset = '../briefcase' + this.logoAsset;
       
     }
