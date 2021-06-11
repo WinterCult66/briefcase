@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  logoAsset = "/assets/img/Logo.JPG";
+  changeTheUrl = true;
+
+  constructor() { 
+
+    if (this.changeTheUrl == true) {
+      this.logoAsset = '../briefcase' + this.logoAsset;
+      
+    }
+  }
 
   ngOnInit(): void {
   }

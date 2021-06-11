@@ -3,13 +3,26 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  asset1 = '/assets/img/street.jpg';
+  asset2 = '/assets/img/street2.jpg';
+  asset3 = '/assets/img/street3.jpg';
+  asset4 = '/assets/img/street4.jpg';
 
-  ngOnInit(): void {
+  changeTheUrl = true;
+  constructor() {
+
+    if (this.changeTheUrl == true) {
+      this.asset1 = '../briefcase' + this.asset1;
+      this.asset2 = '../briefcase' + this.asset2;
+      this.asset3 = '../briefcase' + this.asset3;
+      this.asset4 = '../briefcase' + this.asset4;
+    }
+
   }
 
+  ngOnInit(): void {}
 }
