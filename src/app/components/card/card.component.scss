@@ -17,7 +17,7 @@
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	background: #3085a3;
+	background: rgb(211, 128, 114);
 	text-align: center;
 	cursor: pointer;
 }
@@ -88,6 +88,15 @@
 /***** Lily *****/
 /*---------------*/
 
+@keyframes border-pulse {
+    50% {
+        border-color: rgba(0, 0, 0, 0);
+    }
+}	
+figure {
+	border: 2px solid #f7a1a5;
+	animation: border-pulse 4s infinite;
+}
 figure.effect-lily img {
 	max-width: none;
 	width: -webkit-calc(100% + 50px);
@@ -1353,3 +1362,7 @@ body #cda-remove {
 		display: none;
 	}
 }
+
+
+
+
