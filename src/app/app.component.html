@@ -2,14 +2,17 @@
   <button class="btn btn-primary" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
 </div> -->
+<app-loader *ngIf="isLoad"> </app-loader>
 
-<app-header></app-header>
+<div *ngIf="!isLoad" >
+  <app-header></app-header>
 
-<br><br><br><br><br>
+  <br><br><br><br><br>
 
-<div class="container">
-  <app-info></app-info>
-  <app-card></app-card>
-  <app-contact></app-contact>
-  <br><br>
+  <div class="container " style="transform: scale(0.8);">
+    <app-info></app-info>
+    <app-card></app-card>
+    <app-contact></app-contact>
+    <br><br>
+  </div>
 </div>

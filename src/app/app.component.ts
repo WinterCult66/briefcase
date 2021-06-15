@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'briefcase';
+  isLoad = true;
+
+  constructor(){
+    setTimeout(() => {
+      this.isLoad = false;
+    }, 1500);
+  }
 }

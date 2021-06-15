@@ -8,6 +8,7 @@ import { BodyComponent } from './layout/body/body.component';
 import { CardComponent } from './components/card/card.component';
 import { InfoComponent } from './components/section/info/info.component';
 import { ContactComponent } from './components/section/contact/contact.component';
+import  {LoaderComponent } from './layout/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './components/section/contact/contact.component
     BodyComponent,
     CardComponent,
     InfoComponent,
-    ContactComponent
+    ContactComponent,
+    LoaderComponent
   ],
   imports: [
     MdbModule,
