@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## GitHub Pages
 
 To deploy de App at Github Pages you must run the next command `ng deploy --base-href=https://wintercult66.github.io/briefcase/`
+
+and this is the URL `https://wintercult66.github.io/briefcase/`
+
