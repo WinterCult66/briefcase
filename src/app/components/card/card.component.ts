@@ -12,6 +12,9 @@ export class CardComponent implements OnInit {
   asset2 = '/assets/img/street2.jpg';
   asset3 = '/assets/img/street3.jpg';
   asset4 = '/assets/img/street4.jpg';
+  asset5 = '/assets/img/street5.jpg';
+  asset6 = '/assets/img/street6.jpg';
+  asset7 = '/assets/img/street7.jpg';
 
   changeTheUrl = true;
   constructor() {
@@ -21,9 +24,13 @@ export class CardComponent implements OnInit {
       this.asset2 = '../briefcase' + this.asset2;
       this.asset3 = '../briefcase' + this.asset3;
       this.asset4 = '../briefcase' + this.asset4;
+      this.asset5 = '../briefcase' + this.asset5;
+      this.asset6 = '../briefcase' + this.asset6;
+      this.asset7 = '../briefcase' + this.asset7;
     }
 
   }
 
   ngOnInit(): void {}
 }
+
